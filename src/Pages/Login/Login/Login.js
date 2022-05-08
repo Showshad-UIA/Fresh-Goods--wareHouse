@@ -8,6 +8,7 @@ import { async } from "@firebase/util";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import PageInfo from "../../Shared/PageInfo/PageInfo";
 
 const Login = () => {
 	const mailRef = useRef("");
@@ -43,6 +44,7 @@ const Login = () => {
 	};
 	return (
 		<div className="container w-50 mx-auto">
+			<PageInfo title="Login"></PageInfo>
 			<h1 className="text-primary mt-3 text-center">Login</h1>
 			<Form onSubmit={handleButton}>
 				<Form.Group className="mb-3" controlId="formBasicEmail">

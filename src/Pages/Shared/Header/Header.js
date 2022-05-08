@@ -32,7 +32,7 @@ const Header = () => {
 									Home
 								</Nav.Link>
 								<Nav.Link as={Link} to="blog">
-									Blogs
+									Blog
 								</Nav.Link>
 								<Nav.Link as={Link} to="inventory">
 									Inventory
