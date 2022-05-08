@@ -22,17 +22,11 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home></Home>}></Route>
 				<Route path="/home" element={<Home></Home>}></Route>
-				<Route
-					path="/service/:serviceId"
-					element={<AboutService></AboutService>}
-				></Route>
-				<Route
-					path="/service/:name"
-					element={<AboutService></AboutService>}
-				></Route>
+				<Route path="/service" element={<AboutService></AboutService>}></Route>
+				<Route path="/service" element={<AboutService></AboutService>}></Route>
 
 				<Route path="/blog" element={<Blog></Blog>}></Route>
-				<Route path="/inventory" element={<Inventory></Inventory>}></Route>
+				<Route path="/inventory/:id" element={<Inventory></Inventory>}></Route>
 				<Route path="/about" element={<About></About>}></Route>
 				<Route path="/login" element={<Login></Login>}></Route>
 				<Route path="/signup" element={<Signup></Signup>}></Route>
