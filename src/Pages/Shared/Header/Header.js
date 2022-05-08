@@ -35,7 +35,7 @@ const Header = () => {
 									Inventory
 								</Nav.Link>
 								<Nav.Link as={Link} to="manageItem">
-									Manage Item
+									Manage Items
 								</Nav.Link>
 								<Nav.Link as={Link} to="myItems">
 									My Items
