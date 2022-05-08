@@ -1,0 +1,44 @@
+[
+	{
+		"id": 1,
+		"name": "Travel Photography",
+		"price": "100",
+		"description": "Hi eligents customer we are dealling best service with you with quality photography ",
+		"img": "https://i.ibb.co/DMtbXny/Background.png"
+	},
+	{
+		"id": 2,
+		"name": "Cool shoot",
+		"price": "100",
+		"description": "Casual Video one of the best service among the deal. Dont miss the sell, we are offering 50% discount now. ",
+		"img": "https://i.ibb.co/v4QtXbR/Background-2.png"
+	},
+	{
+		"id": 3,
+		"name": "Recommended Videography",
+		"price": "150",
+		"description": "It is most recommended via our regulars. We are maintainng our quality service with consistency. .",
+		"img": "https://i.ibb.co/P5dJFbs/Background-3.png"
+	},
+	{
+		"id": 4,
+		"name": "Summer Shot",
+		"price": "180",
+		"description": "New year sale from us. Welcome to our regulars and all my valuable customer. You may visit us ",
+		"img": "https://i.ibb.co/N72gYQH/Image-1.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Casual Video",
+		"price": " RM 100",
+		"description": "Its kinda one in two you can get all the services from us. we are providing quality editing services",
+		"img": "https://i.ibb.co/vh4sn6M/image-2.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Fancy shoot",
+		"price": "RM 180",
+		"description": "This is a one of the hot packege where you can grab everything at a time ",
+		"img": "https://i.ibb.co/yhgVq29/Image-3.jpg"
+	}
+]
