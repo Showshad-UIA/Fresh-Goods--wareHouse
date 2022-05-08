@@ -9,7 +9,7 @@ const Checkout = () => {
 				<h2>Photography</h2>
 				<p>$100</p>
 				<p>
-					<small>The wedding photography</small>
+					<small>Exclusive product </small>
 				</p>
 				<button className="btn btn-primary">Checkout</button>
 			</div>
