@@ -22,25 +22,10 @@ function App() {
 		<div>
 			<Header></Header>
 			<Routes>
-				<Route
-					path="/"
-					element={
-						<RequireAuth>
-							<Home></Home>
-						</RequireAuth>
-					}
-				></Route>
-				<Route
-					path="/home"
-					element={
-						<RequireAuth>
-							<Home></Home>
-						</RequireAuth>
-					}
-				></Route>
+				<Route path="/" element={<Home></Home>}></Route>
+				<Route path="/home" element={<Home></Home>}></Route>
 				<Route path="/service" element={<AboutService></AboutService>}></Route>
 				<Route path="/service" element={<AboutService></AboutService>}></Route>
-
 				<Route path="/blog" element={<Blog></Blog>}></Route>
 				<Route path="/manageItem" element={<ManageItem></ManageItem>}></Route>
 				<Route
@@ -51,11 +36,9 @@ function App() {
 						</RequireAuth>
 					}
 				></Route>
-
 				<Route path="/login" element={<Login></Login>}></Route>
 				<Route path="/signup" element={<Signup></Signup>}></Route>
 				<Route path="/checkout" element={<Checkout></Checkout>}></Route>
-
 				<Route path="*" element={<NotFound></NotFound>}></Route>
 			</Routes>
 
