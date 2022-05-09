@@ -29,7 +29,7 @@ function App() {
 				<Route path="/blog" element={<Blog></Blog>}></Route>
 				<Route path="/manageItem" element={<ManageItem></ManageItem>}></Route>
 				<Route
-					path="/inventory"
+					path="/inventory/:proId"
 					element={
 						<RequireAuth>
 							<InventoryPage>S</InventoryPage>

@@ -10,7 +10,6 @@ import Trend from "../Trend/Trend";
 const Home = () => {
 	return (
 		<div>
-			<h1>This is home</h1>
 			<PageInfo title="Home"></PageInfo>
 			<Slider></Slider>
 			<Services></Services>
