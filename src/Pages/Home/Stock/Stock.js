@@ -1,7 +1,7 @@
 import React from "react";
 
-const VideoRecorder = ({ videoRecorder }) => {
-	const { name, img, price } = videoRecorder;
+const Stock = ({ stocks }) => {
+	const { name, img, price } = stocks;
 	return (
 		<div className=" col-sm-12 col-md-6 col-lg-4 gx-5">
 			<div className="card" style={{ width: "18rem" }}>
@@ -20,4 +20,4 @@ const VideoRecorder = ({ videoRecorder }) => {
 	);
 };
 
-export default VideoRecorder;
+export default Stock;

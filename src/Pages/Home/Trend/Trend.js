@@ -1,9 +1,6 @@
 import React from "react";
 
-import videogrpher1 from "../../../images/catagory 1.jpg";
-import videogrpher2 from "../../../images/catagory 2.jpg";
-import videogrpher3 from "../../../images/catagory 3.jpg";
-import VideoRecorder from "../VideoRecorder/VideoRecorder";
+import Stock from "../Stock/Stock";
 
 const experts = [
 	{
@@ -32,20 +29,17 @@ const experts = [
 	},
 ];
 
-const VideoRecorders = () => {
+const Trend = () => {
 	return (
 		<div className="container">
 			<h2 className="text-primary text-center mt-5 mb-5">Trending Product</h2>
 			<div className="row">
-				{experts.map((videoRecorder) => (
-					<VideoRecorder
-						key={VideoRecorder.id}
-						videoRecorder={videoRecorder}
-					></VideoRecorder>
+				{experts.map((stocks) => (
+					<Stock key={stocks.id} stocks={stocks}></Stock>
 				))}
 			</div>
 		</div>
 	);
 };
 
-export default VideoRecorders;
+export default Trend;

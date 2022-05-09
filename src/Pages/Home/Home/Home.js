@@ -5,8 +5,7 @@ import Location from "../Location/Location";
 
 import Services from "../Services/Services";
 import Slider from "../Slider/Slider";
-
-import VideoRecorders from "../VideoRecorders/VideoRecorders";
+import Trend from "../Trend/Trend";
 
 const Home = () => {
 	return (
@@ -14,7 +13,7 @@ const Home = () => {
 			<PageInfo title="Home"></PageInfo>
 			<Slider></Slider>
 			<Services></Services>
-			<VideoRecorders></VideoRecorders>
+			<Trend></Trend>
 			<Location></Location>
 		</div>
 	);
