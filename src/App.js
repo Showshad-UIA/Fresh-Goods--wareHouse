@@ -13,7 +13,9 @@ import Signup from "./Pages/Signup/Signup";
 import Checkout from "./Pages/Checkout/Checkout";
 
 import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
-import Inventory from "./Pages/Inventory/Inventory";
+
+import ManageItem from "./Pages/ManageItem/ManageItem";
+import InventoryPage from "./Pages/InventoryPage/InventoryPage";
 
 function App() {
 	return (
@@ -40,11 +42,12 @@ function App() {
 				<Route path="/service" element={<AboutService></AboutService>}></Route>
 
 				<Route path="/blog" element={<Blog></Blog>}></Route>
+				<Route path="/manageItem" element={<ManageItem></ManageItem>}></Route>
 				<Route
-					path="/inventory/:id"
+					path="/inventory"
 					element={
 						<RequireAuth>
-							<Inventory></Inventory>
+							<InventoryPage>S</InventoryPage>
 						</RequireAuth>
 					}
 				></Route>
