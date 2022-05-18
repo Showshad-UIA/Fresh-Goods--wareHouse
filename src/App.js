@@ -8,14 +8,17 @@ import AboutService from "./Pages/AboutService/AboutService";
 import NotFound from "./Pages/Shared/NotFound/NotFound";
 import Login from "./Pages/Login/Login/Login";
 import Blog from "./Pages/Blog/Blog";
-import About from "./Pages/About/About";
+
 import Signup from "./Pages/Signup/Signup";
 import Checkout from "./Pages/Checkout/Checkout";
 
-import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
-
 import ManageItem from "./Pages/ManageItem/ManageItem";
+
+import About from "./Pages/About/About";
+import MyItems from "./Pages/MyItems/MyItems";
 import InventoryPage from "./Pages/InventoryPage/InventoryPage";
+import AddItems from "./Pages/AddedItems/AddedItems";
+import RequireAuth from "./Pages/Login/RequireAuth/RequireAuth";
 
 function App() {
 	return (
@@ -27,12 +30,15 @@ function App() {
 				<Route path="/service" element={<AboutService></AboutService>}></Route>
 				<Route path="/service" element={<AboutService></AboutService>}></Route>
 				<Route path="/blog" element={<Blog></Blog>}></Route>
+				<Route path="/myItems" element={<MyItems></MyItems>}></Route>
+				<Route path="/addItems" element={<AddItems></AddItems>}></Route>
 				<Route path="/manageItem" element={<ManageItem></ManageItem>}></Route>
+				<Route path="/about" element={<About></About>}></Route>
 				<Route
-					path="/inventory/:proId"
+					path="/inventory/:inventoryId"
 					element={
 						<RequireAuth>
-							<InventoryPage>S</InventoryPage>
+							<InventoryPage></InventoryPage>
 						</RequireAuth>
 					}
 				></Route>

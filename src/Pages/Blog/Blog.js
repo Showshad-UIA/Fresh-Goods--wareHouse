@@ -3,7 +3,7 @@ import PageInfo from "../Shared/PageInfo/PageInfo";
 
 const Blog = () => {
 	return (
-		<div className="container mt-5">
+		<div className="container mt-5 mb-5">
 			<div>
 				Question 1: What is Different JavaScript and Nodejs? JavaScript is
 				programming languages and writing scripts on the website. Nodejs is a
@@ -12,6 +12,7 @@ const Blog = () => {
 				development.javascript is the upgraded version of ECMA script engine
 				written in C++.NodeJs written c, c++ and javascript.
 			</div>
+
 			<div>
 				Question 2: When used Nodejs or Mongodb? Nodejs is a JavaScript runtime
 				environment.Actually nodejs used when we develop server site. And

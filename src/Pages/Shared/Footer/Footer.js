@@ -26,13 +26,13 @@ const Footer = () => {
 						<FooterLink href="#">Export</FooterLink>
 					</Column>
 					<Column>
-						<Heading>Contact Us</Heading>
+						<Heading>Contact</Heading>
 						<FooterLink href="#">Klang</FooterLink>
 						<FooterLink href="#">Penang</FooterLink>
 						<FooterLink href="#">Kualalumpur</FooterLink>
 					</Column>
 					<Column>
-						<Heading>Social Media</Heading>
+						<Heading>Follow Us</Heading>
 						<FooterLink href="#">
 							<i className="fab fa-facebook-f">
 								<span style={{ marginLeft: "10px" }}>Facebook</span>
@@ -52,7 +52,13 @@ const Footer = () => {
 					</Column>
 				</Row>
 				<h4 className="text-center mt-3 text-white">
-					Copyright@fresh-Goods-Warehouse
+					<FooterLink href="#">
+						<i className="fab fa-youtube">
+							<span style={{ marginLeft: "10px" }}>
+								Copyright@fresh-Goods-Warehouse
+							</span>
+						</i>
+					</FooterLink>
 				</h4>
 			</Container>
 		</Box>

@@ -35,17 +35,25 @@ const Header = () => {
 									Blog
 								</Nav.Link>
 
-								<Nav.Link as={Link} to="manageItem">
-									Manage Items
-								</Nav.Link>
-							</Nav>
-							<Nav>
-								<Nav.Link as={Link} to="myItems">
-									My Items
+								{user && (
+									<>
+										<Nav.Link as={Link} to="manageItem" href="#manageItems">
+											Manage items
+										</Nav.Link>
+										<Nav.Link as={Link} to="addItems" href="#addItem">
+											Add item
+										</Nav.Link>
+										<Nav.Link as={Link} to="myItems" href="#deets">
+											My Item
+										</Nav.Link>
+									</>
+								)}
+								<Nav.Link as={Link} to="about">
+									About
 								</Nav.Link>
 								{user ? (
 									<button
-										className="btn btn-link text-white text-decoration-none"
+										className="btn btn-link mr-10 text-white text-decoration-none"
 										onClick={handleLogout}
 									>
 										Logout
