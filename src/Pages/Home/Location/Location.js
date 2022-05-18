@@ -17,7 +17,7 @@ const position = {
 function MyComponent() {
 	return (
 		<div>
-			<h3 className="text-center text-secondary mt-4">Visit Us Here</h3>
+			<h3 className="text-center text-primary mt-4">Find Us Here</h3>
 			<LoadScript googleMapsApiKey="AIzaSyAZOjstpQSIdAfJBGvu9_IxHuh-CmOw-w8">
 				<GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15}>
 					{/* Child components, such as markers, info windows, etc. */}

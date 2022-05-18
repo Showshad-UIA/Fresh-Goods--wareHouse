@@ -20,7 +20,7 @@ const Service = ({ service }) => {
 			<p>
 				<small>{description}</small>
 			</p>
-			<button onClick={() => serviceDetail(_id)} className="btn btn-secondary">
+			<button onClick={() => serviceDetail(_id)} className="btn btn-primary">
 				Update Product
 			</button>
 		</div>

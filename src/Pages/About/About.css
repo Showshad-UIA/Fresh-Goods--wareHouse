@@ -3,3 +3,8 @@
 	width: 550px;
 	height: 400px;
 }
+.content {
+	margin-left: 50px; /* Added */
+	float: none; /* Added */
+	margin-bottom: 10px; /* Added */
+}

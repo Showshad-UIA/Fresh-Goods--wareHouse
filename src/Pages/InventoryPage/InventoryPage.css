@@ -7,6 +7,9 @@
 	text-align: center;
 	color: aqua;
 }
+.button {
+	border-radius: 5px;
+}
 .inventory {
 	background-color: aquamarine;
 }

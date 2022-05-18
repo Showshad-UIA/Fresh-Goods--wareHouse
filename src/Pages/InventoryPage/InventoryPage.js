@@ -108,14 +108,14 @@ const InventoryPage = () => {
 	};
 
 	return (
-		<div className="h-75 bg-secondary inventory">
-			<h1 className="text-center">Product name: {product.name}</h1>
+		<div className="h-75 inventory">
+			<h1 className="text-center mb-5">Product Name: {product.name}</h1>
 
 			<div className="row">
 				<div className="col-md-6">
-					<div className="card mx-auto product g-4 w-50">
+					<div className="card mx-auto mb-5 product g-4 w-50">
 						<img
-							style={{ height: "150px", width: "150px" }}
+							style={{ height: "150px", width: "250px" }}
 							src={product.img}
 							alt=""
 						/>
@@ -133,9 +133,17 @@ const InventoryPage = () => {
 						</button>
 					</div>
 				</div>
-				<div className="col-md-6">
-					<form onSubmit={() => handleAddQuantity(product._id)}>
-						<input ref={numberRef} type="number" placeholder="Add Quantity" />
+				<div className="col-md-6 ">
+					<form
+						className="button"
+						onSubmit={() => handleAddQuantity(product._id)}
+					>
+						<input
+							className=""
+							ref={numberRef}
+							type="number"
+							placeholder="Add your items number"
+						/>
 						<br />
 
 						<button className="btn btn-primary mt-2">Add Quantity</button>

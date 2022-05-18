@@ -12,7 +12,7 @@ const Stock = ({ stocks }) => {
 					<p className="card-text">Price:{price}</p>
 
 					<a href="#" className="btn btn-primary">
-						In Stock
+						Imported
 					</a>
 				</div>
 			</div>
