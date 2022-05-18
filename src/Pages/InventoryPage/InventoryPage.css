@@ -7,7 +7,9 @@
 	text-align: center;
 	color: aqua;
 }
-
+.inventory {
+	background-color: aquamarine;
+}
 /* response pase  */
 
 @media only screen and (max-width: 576px) {

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Carousel } from "react-bootstrap";
+import "./Slider.css";
 import banner from "../../../images/adrian-sulyok-sczNLg6rrhQ-unsplash.png";
 
 const Slider = () => {
@@ -12,9 +13,17 @@ const Slider = () => {
 	return (
 		<Carousel activeIndex={index} onSelect={handleSelect}>
 			<Carousel.Item>
-				<img className="d-block w-100" src={banner} alt="First slide" />
+				<img
+					className="d-block inventory w-100"
+					src={banner}
+					alt="First slide"
+				/>
 				<Carousel.Caption>
-					<h3>Welcome to IIUM Fresh Item warehouse</h3>
+					<div class="slider-container">
+						<h3>WELCOME TO IIUM WAREHOUSE</h3>
+					</div>
+
+					<div id="slider"></div>
 				</Carousel.Caption>
 			</Carousel.Item>
 		</Carousel>

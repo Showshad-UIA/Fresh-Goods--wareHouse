@@ -108,7 +108,7 @@ const InventoryPage = () => {
 	};
 
 	return (
-		<div className="h-75 bg-secondary">
+		<div className="h-75 bg-secondary inventory">
 			<h1 className="text-center">Product name: {product.name}</h1>
 
 			<div className="row">

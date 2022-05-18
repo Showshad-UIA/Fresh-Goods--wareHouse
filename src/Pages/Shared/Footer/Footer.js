@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
 	return (
-		<Box>
+		<Box className="mt-5">
 			<Container>
 				<Row>
 					<Column>

@@ -49,7 +49,7 @@ const Header = () => {
 									</>
 								)}
 								<Nav.Link as={Link} to="about">
-									About
+									About Us
 								</Nav.Link>
 								{user ? (
 									<button
