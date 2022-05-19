@@ -7,6 +7,7 @@ import {
 } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import SocialLogin from "../Login/SocialLogin/SocialLogin";
+import Loading from "../Shared/Loading/Loading";
 
 const Signup = () => {
 	const [createUserWithEmailAndPassword, user, loading, error] =
@@ -31,6 +32,9 @@ const Signup = () => {
 		alert("Updated profile");
 		navigate("/home");
 	};
+	if (loading) {
+		return <Loading></Loading>;
+	}
 
 	return (
 		<div className="signup-form">

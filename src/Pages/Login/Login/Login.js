@@ -9,6 +9,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
 import PageInfo from "../../Shared/PageInfo/PageInfo";
+import Loading from "../../Shared/Loading/Loading";
 
 const Login = () => {
 	const mailRef = useRef("");
@@ -36,12 +37,24 @@ const Login = () => {
 	if (user) {
 		navigate(from, { replace: true });
 	}
+	if (loading) {
+		return <Loading></Loading>;
+	}
+	let errorMessage;
+	if (error) {
+		errorMessage = (
+			<div>
+				<p style={{ color: "red" }}>Error: {error?.message}</p>
+			</div>
+		);
+	}
 
 	const resetPassword = async () => {
 		const email = mailRef.current.value;
 		await sendPasswordResetEmail(email);
 		toast("sent email");
 	};
+
 	return (
 		<div className="container w-50 mx-auto">
 			<PageInfo title="Login"></PageInfo>
@@ -62,6 +75,7 @@ const Login = () => {
 				<Form.Group className="mb-3" controlId="formBasicCheckbox">
 					<Form.Check type="checkbox" label="Check me out" />
 				</Form.Group>
+				{errorMessage}
 				<Button variant="primary mx-auto d-block mb-2" type="submit">
 					Login
 				</Button>
