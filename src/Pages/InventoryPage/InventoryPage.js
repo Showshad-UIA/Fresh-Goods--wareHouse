@@ -67,13 +67,13 @@ const InventoryPage = () => {
 
 	return (
 		<div className="h-75 inventory">
-			<h1 className="text-center mb-5">Product Name: {product.name}</h1>
+			<h1 className="text-center mb-5">Types: {product.name}</h1>
 
 			<div className="row">
 				<div className="col-md-6">
 					<div className="card mx-auto mb-5 product g-4 w-50">
 						<img
-							style={{ height: "150px", width: "250px" }}
+							style={{ height: "150px", width: "200px" }}
 							src={product.img}
 							alt=""
 						/>

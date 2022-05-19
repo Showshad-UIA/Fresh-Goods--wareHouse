@@ -82,7 +82,7 @@ const Login = () => {
 			</Form>
 
 			<p>
-				Are you new at Gadget House?
+				Are you new at Fresh Goods WareHouse?
 				<Link
 					to="/signup"
 					className="text-danger text-decoration-none pe-auto "
