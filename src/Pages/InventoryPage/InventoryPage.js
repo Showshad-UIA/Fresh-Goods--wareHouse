@@ -6,7 +6,7 @@
 
 // 	const [product, setProduct] = useState({});
 // 	useEffect(() => {
-// 		fetch(`http://localhost:5000/products/${inventoryId}`)
+// 		fetch(`https://cryptic-hamlet-64180.herokuapp.com/products/${inventoryId}`)
 // 			.then((res) => res.json)
 // 			.then((data) => setProduct(data));
 // 	}, [inventoryId]);
@@ -49,13 +49,13 @@ const InventoryPage = () => {
 	const { inventoryId } = useParams();
 	const [product, setProduct] = useState({});
 	useEffect(() => {
-		fetch(`http://localhost:5000/products/${inventoryId}`)
+		fetch(`https://cryptic-hamlet-64180.herokuapp.com/products/${inventoryId}`)
 			.then((res) => res.json())
 			.then((data) => setProduct(data));
 	}, [inventoryId]);
 
 	const handleDeliveredToQuantity = (id) => {
-		const url = `http://localhost:5000/products/${inventoryId}`;
+		const url = `https://cryptic-hamlet-64180.herokuapp.com/products/${inventoryId}`;
 
 		if (product.quantity > 0) {
 			product.quantity = product.quantity - 1;
@@ -81,7 +81,7 @@ const InventoryPage = () => {
 	};
 
 	const handleAddQuantity = (id) => {
-		const url = `http://localhost:5000/products/${id}`;
+		const url = `https://cryptic-hamlet-64180.herokuapp.com/products/${id}`;
 		const currentQuantity = parseInt(numberRef.current.value);
 		let previousQuantity = parseInt(product.quantity);
 		if (previousQuantity > 0) {

@@ -8,7 +8,7 @@ import "./ManageItem.css";
 const ManageItem = () => {
 	const [products, setProducts] = useState([]);
 	useEffect(() => {
-		fetch("http://localhost:5000/products")
+		fetch("https://cryptic-hamlet-64180.herokuapp.com/products")
 			.then((res) => res.json())
 			.then((data) => setProducts(data));
 	}, []);
@@ -20,7 +20,7 @@ const ManageItem = () => {
 	const handleDeleteBtn = (id) => {
 		const request = window.confirm("Are you sure you want to delete");
 		if (request) {
-			fetch(`http://localhost:5000/products/${id}`, {
+			fetch(`https://cryptic-hamlet-64180.herokuapp.com/products/${id}`, {
 				method: "DELETE",
 			})
 				.then((res) => res.json())

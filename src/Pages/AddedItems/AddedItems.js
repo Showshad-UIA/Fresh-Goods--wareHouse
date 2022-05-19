@@ -11,7 +11,7 @@ const AddItems = () => {
 	const onSubmit = (data) => {
 		console.log(data);
 
-		fetch(`http://localhost:5000/products/`, {
+		fetch(`https://cryptic-hamlet-64180.herokuapp.com/products/`, {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(data),
